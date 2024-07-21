@@ -1,0 +1,52 @@
+.cardImagesIcon,
+.trendsShapingThe {
+  align-self: stretch;
+  position: relative;
+}
+.cardImagesIcon {
+  height: 212px;
+  border-radius: var(--br-xl);
+  max-width: 100%;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.trendsShapingThe {
+  margin: 0;
+  font-size: inherit;
+  line-height: 130%;
+  font-weight: 600;
+  font-family: inherit;
+}
+.creativeAgenciesHave {
+  align-self: stretch;
+  position: relative;
+  font-size: var(--paragraph-size);
+  line-height: 150%;
+  font-weight: 500;
+  color: var(--color-gray-300);
+}
+.cardContents,
+.cardsContainer {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: var(--gap-mini);
+}
+.cardsContainer {
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-6xl);
+  text-align: left;
+  font-size: var(--font-size-5xl);
+  color: var(--color-black);
+  font-family: var(--paragraph);
+}
+@media screen and (max-width: 450px) {
+  .trendsShapingThe {
+    font-size: var(--semibold-size);
+    line-height: 25px;
+  }
+}

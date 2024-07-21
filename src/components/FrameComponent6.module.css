@@ -1,0 +1,125 @@
+.home {
+  text-decoration: none;
+  position: relative;
+  font-weight: 500;
+  color: inherit;
+  display: inline-block;
+  min-width: 47px;
+}
+.homeLink {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-2xs) var(--padding-3xs);
+}
+.linksContainer,
+.linksContainer1,
+.linksContainer2,
+.linksContainer3,
+.linksContainer4 {
+  height: 20px;
+  width: 83px;
+  font-family: var(--paragraph);
+  font-weight: 500;
+  font-size: var(--font-size-mini);
+  color: var(--color-gainsboro-100);
+}
+.linksContainer1,
+.linksContainer2,
+.linksContainer3,
+.linksContainer4 {
+  flex: 1;
+  width: auto;
+}
+.topNavbarLinks {
+  flex: 1;
+  border-radius: var(--br-981xl);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-6xs);
+  max-width: 100%;
+}
+.benchmarkLink {
+  height: 36px;
+  flex: 1;
+}
+.searchSvgrepoCom1Icon {
+  height: 20px;
+  width: 20px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.searchBenchmark,
+.searchLink {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.searchLink {
+  height: 36px;
+  width: 36px;
+  border-radius: var(--br-481xl);
+  background-color: var(--primary);
+  border: 2px solid var(--primary);
+  box-sizing: border-box;
+  overflow: hidden;
+  flex-shrink: 0;
+  justify-content: center;
+  padding: var(--padding-5xs) var(--padding-7xs);
+}
+.searchBenchmark {
+  width: 289px;
+  justify-content: flex-end;
+  gap: var(--gap-mini);
+}
+.navbarLinks,
+.navbarLinksWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  max-width: 100%;
+}
+.navbarLinks {
+  flex: 1;
+  justify-content: flex-end;
+  padding: 0 0 0 var(--padding-296xl);
+  box-sizing: border-box;
+  gap: var(--gap-xl);
+}
+.navbarLinksWrapper {
+  position: absolute;
+  top: 4px;
+  left: 0;
+  width: 100%;
+  justify-content: center;
+  z-index: 6;
+  text-align: left;
+  font-size: var(--font-size-mini);
+  color: var(--color-white);
+  font-family: var(--paragraph);
+}
+@media screen and (max-width: 1200px) {
+  .navbarLinks {
+    padding-left: var(--padding-138xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 750px) {
+  .navbarLinks {
+    padding-left: var(--padding-59xl);
+    box-sizing: border-box;
+  }
+  .navbarLinksWrapper {
+    gap: var(--gap-7xl);
+  }
+}
+@media screen and (max-width: 450px) {
+  .navbarLinks {
+    padding-left: var(--padding-xl);
+    box-sizing: border-box;
+  }
+}

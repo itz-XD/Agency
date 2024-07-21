@@ -1,0 +1,73 @@
+.frameChild {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+  mix-blend-mode: normal;
+}
+.rectangleParent {
+  margin-right: -6px;
+  margin-bottom: 46px;
+  align-self: stretch;
+  align-items: flex-start;
+  padding: 0 var(--padding-7xs) 57.5px;
+  box-sizing: border-box;
+  position: relative;
+  gap: 141px;
+  max-width: 101%;
+  flex-shrink: 0;
+}
+.guidesReportsParent,
+.mainLandingPage,
+.rectangleParent {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.guidesReportsParent {
+  align-self: stretch;
+  align-items: flex-start;
+  max-width: 100%;
+}
+.mainLandingPage {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-white);
+  overflow: hidden;
+  align-items: flex-end;
+  gap: 104px;
+  line-height: normal;
+  letter-spacing: normal;
+}
+@media screen and (max-width: 1050px) {
+  .rectangleParent {
+    padding-bottom: 37px;
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 750px) {
+  .rectangleParent {
+    gap: 70px;
+  }
+  .mainLandingPage {
+    gap: var(--gap-33xl);
+  }
+}
+@media screen and (max-width: 450px) {
+  .rectangleParent {
+    gap: 35px;
+    padding-bottom: 24px;
+    box-sizing: border-box;
+  }
+  .mainLandingPage {
+    gap: var(--gap-7xl);
+  }
+}

@@ -1,0 +1,101 @@
+.component71Icon {
+  align-self: stretch;
+  height: 195px;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.digitalMarketing {
+  position: relative;
+  line-height: 23px;
+  font-weight: 500;
+}
+.digitalMarketingWrapper,
+.label {
+  display: flex;
+  justify-content: center;
+}
+.digitalMarketingWrapper {
+  border-radius: var(--br-9xs);
+  background-color: var(--color-gray-900);
+  overflow: hidden;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 var(--padding-7xs);
+  white-space: nowrap;
+}
+.label {
+  align-self: stretch;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.aDeepDive {
+  flex: 1;
+  position: relative;
+  line-height: 150%;
+  font-weight: 600;
+  display: inline-block;
+  max-width: 100%;
+}
+.title {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  max-width: 100%;
+  font-size: var(--semibold-size);
+  color: var(--color-black);
+}
+.inTheEarly {
+  flex: 1;
+  position: relative;
+  line-height: 150%;
+  font-weight: 500;
+  display: inline-block;
+  max-width: 100%;
+}
+.articleItem,
+.content,
+.subtitle,
+.titleContent {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.subtitle {
+  align-self: stretch;
+  flex-direction: row;
+  font-size: var(--paragraph-size);
+  color: var(--color-gray-400);
+}
+.articleItem,
+.content,
+.titleContent {
+  flex-direction: column;
+}
+.content {
+  align-self: stretch;
+  gap: var(--gap-smi);
+}
+.articleItem,
+.titleContent {
+  box-sizing: border-box;
+}
+.titleContent {
+  align-self: stretch;
+  padding: var(--padding-xl);
+}
+.articleItem {
+  border-radius: var(--br-lg);
+  background-color: var(--color-gray-700);
+  border: 1px solid var(--color-gray-1000);
+  padding: 0 0 var(--padding-21xl);
+  text-align: left;
+  font-size: var(--font-size-mini);
+  color: var(--color-gray-100);
+  font-family: var(--paragraph);
+}

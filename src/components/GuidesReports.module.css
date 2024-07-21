@@ -1,0 +1,117 @@
+.guidesReportsChild {
+  height: 799px;
+  width: 1445px;
+  position: relative;
+  background-color: var(--color-whitesmoke-100);
+  display: none;
+  max-width: 100%;
+}
+.guidesReports1,
+.seeAll {
+  position: relative;
+  display: inline-block;
+}
+.guidesReports1 {
+  margin: 0;
+  font-size: inherit;
+  font-weight: 600;
+  font-family: inherit;
+  max-width: 100%;
+}
+.seeAll {
+  line-height: 26px;
+  font-weight: 500;
+  min-width: 58px;
+}
+.link {
+  justify-content: center;
+}
+.guidesReportsParent,
+.link,
+.seeAllArticles {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.seeAllArticles {
+  justify-content: center;
+  font-size: var(--paragraph-size);
+  color: var(--primary);
+}
+.guidesReportsParent {
+  align-self: stretch;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+  max-width: 100%;
+}
+.guidesReportsItems,
+.guidesReportsTitle {
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.guidesReportsItems {
+  align-self: stretch;
+  display: grid;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: var(--gap-7xl);
+  grid-template-columns: repeat(3, minmax(288px, 1fr));
+}
+.guidesReportsTitle {
+  width: 1204px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--gap-41xl);
+  z-index: 1;
+}
+.guidesReports {
+  align-self: stretch;
+  background-color: var(--color-whitesmoke-100);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: var(--padding-86xl) var(--padding-xl) var(--padding-65xl);
+  box-sizing: border-box;
+  max-width: 100%;
+  text-align: left;
+  font-size: var(--text-size);
+  color: var(--color-black);
+  font-family: var(--paragraph);
+}
+@media screen and (max-width: 1050px) {
+  .guidesReports1 {
+    font-size: var(--font-size-17xl);
+  }
+  .guidesReportsItems {
+    justify-content: center;
+    grid-template-columns: repeat(2, minmax(288px, 499px));
+  }
+  .guidesReports {
+    padding-top: var(--padding-49xl);
+    padding-bottom: var(--padding-36xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 750px) {
+  .guidesReportsParent {
+    flex-wrap: wrap;
+  }
+  .guidesReportsItems {
+    grid-template-columns: minmax(288px, 1fr);
+  }
+  .guidesReportsTitle {
+    gap: var(--gap-11xl);
+  }
+}
+@media screen and (max-width: 450px) {
+  .guidesReports1 {
+    font-size: var(--font-size-8xl);
+  }
+  .guidesReports {
+    padding-top: var(--padding-25xl);
+    padding-bottom: var(--padding-17xl);
+    box-sizing: border-box;
+  }
+}

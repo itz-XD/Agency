@@ -1,0 +1,94 @@
+.frameChild {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--color-whitesmoke-200);
+  /* width: 1468px; */
+  width: 100%;
+  height: 671px;
+}
+.popularTool {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  font-weight: 600;
+  font-family: inherit;
+}
+.seeAlalTools {
+  position: relative;
+  line-height: 26px;
+  font-weight: 500;
+  display: inline-block;
+  min-width: 117px;
+}
+.link {
+  justify-content: center;
+}
+.link,
+.popularToolTitle,
+.seeAllArticles {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.seeAllArticles {
+  justify-content: center;
+  font-size: var(--paragraph-size);
+  color: var(--primary);
+}
+.popularToolTitle {
+  align-self: stretch;
+  justify-content: space-between;
+  padding: 0 0 0 var(--padding-9xs);
+  gap: var(--gap-xl);
+}
+.instagramHashtagGenerator,
+.popularTools {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.instagramHashtagGenerator {
+  align-self: stretch;
+  align-items: flex-start;
+  gap: var(--gap-11xl);
+  font-size: var(--semibold-size);
+}
+.popularTools {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1204px;
+  align-items: flex-end;
+  gap: var(--gap-41xl);
+  z-index: 1;
+}
+.rectangleParent {
+  align-self: stretch;
+  height: 684px;
+  position: relative;
+  max-width: 100%;
+  text-align: left;
+  font-size: var(--text-size);
+  color: var(--color-black);
+  font-family: var(--paragraph);
+}
+@media screen and (max-width: 1050px) {
+  .popularTool {
+    font-size: var(--font-size-17xl);
+  }
+}
+@media screen and (max-width: 450px) {
+  .popularTool {
+    font-size: var(--font-size-8xl);
+  }
+  .popularToolTitle {
+    flex-wrap: wrap;
+  }
+  .rectangleParent {
+    height: auto;
+    min-height: 684;
+  }
+}

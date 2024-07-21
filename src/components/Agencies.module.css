@@ -1,0 +1,259 @@
+.agenciesImage {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background-color: var(--color-whitesmoke-200);
+  width: 100%;
+}
+
+.agenciesCardOneImage {
+  height: 462px;
+  flex: 1;
+  position: relative;
+  border-radius: var(--br-xl);
+  max-width: 100%;
+  overflow: hidden;
+  object-fit: cover;
+  min-width: 359px;
+}
+
+.influencerMarketingAgencies {
+  margin: 0;
+  align-self: stretch;
+  position: relative;
+  font-size: inherit;
+  font-weight: 600;
+  font-family: inherit;
+}
+
+.viewACollection {
+  align-self: stretch;
+  position: relative;
+  font-size: var(--paragraph-size);
+  line-height: 150%;
+  font-weight: 500;
+}
+
+.agenciesCardOneHeading {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: var(--gap-mini);
+}
+
+.viewAgencies {
+  width: 241px;
+  height: 60px;
+}
+
+.agenciesCardOneContent {
+  width: 511px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: var(--padding-xl) 0;
+  box-sizing: border-box;
+  gap: var(--gap-11xl);
+  min-width: 511px;
+  max-width: 100%;
+}
+
+.topAgencies {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-65xl);
+  max-width: 100%;
+}
+
+.influencerMarketingPlatforms {
+  margin: 0;
+  align-self: stretch;
+  position: relative;
+  font-size: inherit;
+  font-weight: 600;
+  font-family: inherit;
+}
+
+.allTheLeading {
+  align-self: stretch;
+  position: relative;
+  font-size: var(--paragraph-size);
+  line-height: 150%;
+  font-weight: 500;
+}
+
+.agenciesCardTwoHeading {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: var(--gap-mini);
+}
+
+.viewPlatforms {
+  width: 246px;
+  height: 60px;
+}
+
+.agenciesCardTwoContent {
+  width: 493px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: var(--padding-xl) 0;
+  box-sizing: border-box;
+  gap: var(--gap-11xl);
+  min-width: 493px;
+  max-width: 100%;
+}
+
+.bottomImageIcon {
+  height: 462px;
+  flex: 1;
+  position: relative;
+  border-radius: var(--br-xl);
+  max-width: 100%;
+  overflow: hidden;
+  object-fit: cover;
+  min-width: 359px;
+}
+
+.agenciesCardTwo,
+.agenciesContent {
+  display: flex;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+
+.agenciesCardTwo {
+  align-self: stretch;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 var(--padding-lg) 0 0;
+  box-sizing: border-box;
+  gap: var(--gap-65xl);
+}
+
+.agenciesContent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1148px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--gap-61xl);
+  z-index: 1;
+}
+
+.agenciesContainer {
+  align-self: stretch;
+  height: 1269px;
+  position: relative;
+  max-width: 100%;
+}
+
+.frameChild,
+.frameItem {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1493px;
+  height: 0;
+  z-index: 1;
+}
+
+.frameItem {
+  z-index: 2;
+}
+
+.lineParent {
+  align-self: stretch;
+  height: 0;
+  position: relative;
+  margin-top: -130px;
+}
+
+.agencies {
+  align-self: stretch;
+  height: 1285px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 0 var(--padding-base);
+  box-sizing: border-box;
+  max-width: 100%;
+  text-align: left;
+  font-size: var(--text-size);
+  color: var(--color-black);
+  font-family: var(--paragraph);
+}
+
+@media screen and (max-width: 1050px) {
+  .influencerMarketingAgencies {
+    font-size: var(--font-size-17xl);
+  }
+
+  .agenciesCardOneContent {
+    flex: 1;
+  }
+
+  .topAgencies {
+    flex-wrap: wrap;
+  }
+
+  .influencerMarketingPlatforms {
+    font-size: var(--font-size-17xl);
+  }
+
+  .agenciesCardTwoContent {
+    flex: 1;
+  }
+
+  .agenciesCardTwo {
+    flex-wrap: wrap;
+  }
+
+  .agenciesContainer {
+    height: auto;
+    min-height: 1269;
+  }
+
+  .agencies {
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 750px) {
+
+  .agenciesCardOneContent,
+  .agenciesCardTwoContent {
+    min-width: 100%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .agenciesCardOneImage {
+    min-width: 100%;
+  }
+
+  .influencerMarketingAgencies,
+  .influencerMarketingPlatforms {
+    font-size: var(--font-size-8xl);
+  }
+
+  .bottomImageIcon {
+    min-width: 100%;
+  }
+}
